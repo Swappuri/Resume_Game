@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(194,227,232,255);
+}
+
+canvas {
+  border: 2px solid #2d2d2d;
+  border-radius: 10px;
+}
+
+.infoModal1, .infoModal2, .infoModal3 {
+  display: none; 
+  position: fixed; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  background-color: white; 
+  padding: 20px; 
+  border: 4px solid rgba(194,227,232,255); 
+  z-index: 1000; 
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+  font-family: 'Poppins', sans-serif;
+  border-radius: 10px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.closeModal {
+  margin-top: 10px;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: rgba(194,227,232,255);
+  border-radius: 5px;
+}
